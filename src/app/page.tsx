@@ -39,14 +39,14 @@ function Navbar() {
             href="#kontakt"
             className="bg-accent text-background font-semibold px-5 py-2 rounded hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
           </a>
         </div>
         <a
           href="#kontakt"
           className="md:hidden bg-accent text-background font-semibold px-4 py-2 text-sm rounded"
         >
-          Bezpłatna konsultacja
+          Bezpłatna konsultacja telefoniczna
         </a>
       </div>
     </nav>
@@ -94,7 +94,7 @@ function Hero() {
             href="#kontakt"
             className="cta-pulse bg-accent text-background font-bold text-lg px-8 py-4 rounded flex items-center gap-2 hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
             <ChevronRight className="w-5 h-5" />
           </a>
           <a
@@ -195,7 +195,7 @@ function About() {
             href="#kontakt"
             className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
@@ -259,7 +259,7 @@ function ForWhom() {
             href="#kontakt"
             className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
@@ -274,7 +274,7 @@ function HowItWorks() {
     {
       num: "01",
       title: "Rozmawiamy",
-      desc: "Na bezpłatnej konsultacji poznaję Twój cel, historię treningową, tryb życia i ograniczenia. Bez zobowiązań.",
+      desc: "Na bezpłatnej konsultacji telefonicznej poznaję Twój cel, historię treningową, tryb życia i ograniczenia. Bez zobowiązań.",
       icon: <Phone className="w-5 h-5" />,
     },
     {
@@ -333,7 +333,7 @@ function HowItWorks() {
             href="#kontakt"
             className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
@@ -420,7 +420,7 @@ function SocialProof() {
             href="#kontakt"
             className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
           >
-            Bezpłatna konsultacja
+            Bezpłatna konsultacja telefoniczna
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
@@ -438,10 +438,10 @@ function ContactSection() {
           <div className="accent-line mx-auto mb-6" />
           <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4">
             Zarezerwuj bezpłatną{" "}
-            <span className="text-accent">konsultację</span>
+            <span className="text-accent">konsultację telefoniczną</span>
           </h2>
           <p className="text-muted text-lg">
-            Wypełnij formularz &mdash; odezwę się w ciągu 24h, żeby ustalić termin.
+            Zostaw dane &mdash; oddzwonię w ciągu 24h, żeby umówić rozmowę.
           </p>
         </div>
         <ContactFormClient />

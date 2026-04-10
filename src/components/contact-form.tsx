@@ -23,7 +23,7 @@ export function ContactForm() {
         </div>
         <h3 className="text-2xl font-bold mb-3">Dziękuję!</h3>
         <p className="text-muted text-lg">
-          Odezwę się w ciągu 24h, żeby ustalić termin konsultacji.
+          Odezwę się w ciągu 24h, żeby umówić konsultację telefoniczną.
         </p>
       </div>
     );
@@ -74,7 +74,7 @@ export function ContactForm() {
           </>
         ) : (
           <>
-            Zarezerwuj konsultację
+            Zarezerwuj konsultację telefoniczną
             <ChevronRight className="w-5 h-5" />
           </>
         )}

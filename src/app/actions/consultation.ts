@@ -2,6 +2,9 @@
 
 import { createClient } from "@/utils/supabase/server";
 
+const ZAPIER_WEBHOOK_URL =
+  "https://hooks.zapier.com/hooks/catch/15102711/u7wwark/";
+
 export async function submitConsultation(formData: FormData) {
   const name = formData.get("name") as string;
   const phone = formData.get("phone") as string;
@@ -20,6 +23,15 @@ export async function submitConsultation(formData: FormData) {
   if (error) {
     return { error: "Coś poszło nie tak. Spróbuj ponownie." };
   }
+
+  // Send to Zapier webhook (fire-and-forget — don't block the user on this)
+  fetch(ZAPIER_WEBHOOK_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, phone }),
+  }).catch(() => {
+    // Zapier failure is non-critical — lead is already saved in Supabase
+  });
 
   return { success: true };
 }
