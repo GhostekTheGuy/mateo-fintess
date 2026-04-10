@@ -39,14 +39,14 @@ function Navbar() {
             href="#kontakt"
             className="bg-accent text-background font-semibold px-5 py-2 rounded hover:bg-accent-dark transition-colors"
           >
-            Umów się
+            Bezpłatna konsultacja
           </a>
         </div>
         <a
           href="#kontakt"
           className="md:hidden bg-accent text-background font-semibold px-4 py-2 text-sm rounded"
         >
-          Umów się
+          Bezpłatna konsultacja
         </a>
       </div>
     </nav>
@@ -189,6 +189,16 @@ function About() {
             </div>
           </div>
         </div>
+
+        <div className="text-center mt-16">
+          <a
+            href="#kontakt"
+            className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
+          >
+            Bezpłatna konsultacja
+            <ChevronRight className="w-5 h-5" />
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -242,6 +252,16 @@ function ForWhom() {
               <p className="text-muted leading-relaxed">{p.desc}</p>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="#kontakt"
+            className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
+          >
+            Bezpłatna konsultacja
+            <ChevronRight className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>
@@ -306,6 +326,16 @@ function HowItWorks() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="#kontakt"
+            className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
+          >
+            Bezpłatna konsultacja
+            <ChevronRight className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>
@@ -383,6 +413,16 @@ function SocialProof() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="#kontakt"
+            className="cta-pulse inline-flex items-center gap-2 bg-accent text-background font-bold text-lg px-8 py-4 rounded hover:bg-accent-dark transition-colors"
+          >
+            Bezpłatna konsultacja
+            <ChevronRight className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>
