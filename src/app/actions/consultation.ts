@@ -25,10 +25,11 @@ export async function submitConsultation(formData: FormData) {
   }
 
   // Send to Zapier webhook (fire-and-forget — don't block the user on this)
+  const params = new URLSearchParams({ name, phone });
   fetch(ZAPIER_WEBHOOK_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, phone }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: params.toString(),
   }).catch(() => {
     // Zapier failure is non-critical — lead is already saved in Supabase
   });
