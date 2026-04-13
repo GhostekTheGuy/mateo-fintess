@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { ChevronRight, CheckCircle, Loader2 } from "lucide-react";
 import { submitConsultation } from "@/app/actions/consultation";
 
@@ -14,6 +14,12 @@ async function formAction(_prev: FormState, formData: FormData): Promise<FormSta
 
 export function ContactForm() {
   const [state, action, pending] = useActionState(formAction, initialState);
+
+  useEffect(() => {
+    if (state.success && typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead");
+    }
+  }, [state.success]);
 
   if (state.success) {
     return (
